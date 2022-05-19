@@ -11,7 +11,7 @@
 
 ##  Link and Screenshots
 
-> [Link to the live webpage](https://richardzhang01.github.io/password-generator/)
+> [Link to the live application](https://richardzhang01.github.io/password-generator/)
 
 ![Screenshot one](./assets/images/screenshot-1.png)
 
@@ -20,3 +20,5 @@
 ![Screenshot three](./assets/images/screenshot-3.png)
 
 ![Screenshot four](./assets/images/screenshot-4.png)
+
+![Screenshot five](./assets/images/screenshot-5.png)
