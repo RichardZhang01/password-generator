@@ -10,7 +10,7 @@ let specialChars = " \"!#$%&'()*+,-./:;<=>?@[]^_`{|}\\~";
 // generate password function
 let generatePassword = () => {
   // Asks user for password length
-  let passwordLength = Number(window.prompt("How many characters would you like to have in your password? Please enter a number between 8 and 128:"));
+  let passwordLength = window.prompt("How many characters would you like to have in your password? Please enter a number between 8 and 128:");
 
   // If the user doesn't enter anything, or if user selects cancel, function exits
   if (!passwordLength) {
@@ -18,8 +18,11 @@ let generatePassword = () => {
   // If the user doesn't enter a value between 8 and 128, they're prompted to enter a value in the range, and function starts again from the beginning
   } else if (passwordLength < 8 || passwordLength > 128) {
     window.alert("Please enter a password length between 8 and 128 characters.");
-    generatePassword();
+    
+    return "";
   };
+
+  passwordLength = Number(passwordLength);
 
   // Each of the next 4 sections asks the user if they want to include a certain character type, and confirms their decision
   let passwordLower = window.confirm("Would you like your password to include lowercase characters? Click OK for yes, and cancel for no.");
@@ -58,12 +61,8 @@ let generatePassword = () => {
   // They are then asked if they want to go through the process again. If no, the function cancels. If yes, the function begins again
   if (!passwordLower && !passwordUpper && !passwordNumeric && !passwordSpecial) {
     window.alert("Please select at least one type of character to include in your password.");
-    let tryAgain = window.confirm("Would you like to try again? Click OK for yes, and cancel for no.");
-
-    if (!tryAgain) {
-      return "";
-    };
-    generatePassword();
+    
+    return "";
   };
 
   // Variable declarations for the password generation part of the function
