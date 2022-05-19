@@ -11,7 +11,7 @@
 
 ##  Link and Screenshots
 
-> [Link to the live webpage](https://richardzhang01.github.io/richard-zhang-portfolio/)
+> [Link to the live webpage](https://richardzhang01.github.io/password-generator/)
 
 ![Screenshot one](./assets/images/screenshot-1.png)
 
